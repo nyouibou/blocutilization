@@ -1,0 +1,11 @@
+BlocBuilder<ProductsBloc, ProductsState>(
+        builder: (context, state) {
+          return ListView.builder(
+            itemCount: state.plist!.length,
+            itemBuilder: (BuildContext context, int index) {
+              Cart c = state.plist![index];
+              return ListTile(leading: Text("test"));
+            },
+          );
+        },
+      ),
